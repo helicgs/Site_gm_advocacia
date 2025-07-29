@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+} 
+body{
+    background-color: rgb(237, 237, 237);
+}  
+img{    
+    width: 70%;
+}
+.logo{
+    width: 10%;
+}
+
+
+.container{
+    max-width: auto;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 5px rgb(201, 159,50) solid;
+    padding: 10px 0px;
+}
+
+header .menu{    
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    width: auto;
+}
+
+
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.container li{
+    margin-left: 7px;
+}
+
+.container li a{
+    text-decoration: none;
+    color: #CDCDCD;
+    font-size: 15px;
+    padding: 8px 10px;
+}
+
+.container li a:hover{
+    color: rgba(201, 159, 50, 1);
+}
+
+.sociais{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;   
+}
+.sociais button{
+    font-size: 20px;
+    background: none;
+    text-decoration: none;
+    color: #CDCDCD;
+    width: 40px;  /* tamanho dos icones */
+    border: none;
+} 
+.sociais button:hover {
+    color: rgba(201, 159, 50, 1) ;
+    transform: scale(1.3);    /* Efeito ao passar o mouse */
+} 
+
+header .menu-mobile{
+    display: none;  /* Esconder menu mobile na pagina Web */
+}
+
+header .btn-menu-mobile .line-n1{
+    width: 25px;
+}
+header .btn-menu-mobile .line-n2{
+    width:20px;
+}
+
+/* banner */
+
+.banner {
+    position: relative;
+    
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner .texto-banner {
+    position: absolute;
+    top: 45% ;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.texto-banner h1{
+    font-size: 65px;
+    line-height: 0.9; /* quanto menor, menos espaço entre as linhas */
+}
+.texto-banner h3{
+    font-size: 45px;
+    font-weight:200;
+    line-height: 1.2; /* quanto menor, menos espaço entre as linhas */
+}
+.texto-banner h5{
+   font-size: 25px;
+    font-weight: 180;
+    line-height: 0.9; /* quanto menor, menos espaço entre as linhas */ 
+}
+
+/* ÁREAS DE ATUAÇÃO CARDS HOME*/
+
+.areas_de_atuacao H1{
+    font-size: 25px;
+    color: rgba(201, 159, 50, 1);
+    text-align: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: rgba(201, 159, 50, 1) solid 2px;
+    border-radius:50px;
+    max-width: 68%;
+    padding: 5px 5px;
+}
+
+
+
+.container-areas h3 {
+    color: rgba(201, 159, 50, 1);
+    
+}
+.container-areas p{ 
+    color: #515151;
+}
+    
+.container-areas {    
+    width: 80%; 
+    height: auto;          /* Faz o container ocupar toda a largura da tela em telas pequenas */
+    margin: 30px auto;     /* Centraliza horizontalmente */
+    padding: 10px;         /* Adiciona espaçamento interno */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 2px solid rgba(201, 159, 50, 1);
+    border-radius: 10px;
+    width: 300px;
+    height: 340px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    transition: transform 0.2s ease;
+    margin: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: rgba(201, 159, 50, 1);
+  margin-bottom: 10px;
+  font-size: 20px;
+ 
+}
+
+.card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* O Ecritóroio */
+.escritorio-h1 h1{
+    margin-top: 40px;
+    font-size: 25px;
+    color: rgba(201, 159, 50, 1);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: rgba(201, 159, 50, 1) solid 2px;
+    border-radius:50px;
+    max-width: 68%;
+    padding: 5px 5px;
+}
+.escritorio-h1 p{
+    width: 70%;
+    color: #333;
+    margin: 40px auto;
+    text-align: center;
+}
+
+    /* Footer*/
+    
+    .container-footer{
+        margin-top: 100px;
+        background-color: rgb(20, 20, 20);
+        border-top: rgba(201, 159, 50, 1) solid 5px;
+        max-width: 100%;
+    }
+
+    .logo-footer{
+        width: 150px;
+        margin: 0 auto; 
+    }
+    .logo-footer img{
+        width:150px;   /* Tamanho da logo */       
+    }
+
+    .container-footer .logo-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-informacoes{
+        max-width: 70%;
+        margin: 30px auto;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .container-informacoes h3{
+        color: rgba(201, 159, 50, 1) ;
+    }
+     .container-informacoes p{
+        color: #DDDDDD;;
+    }
+
+    .container-footer .sociais-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .sociais-footer button{
+        font-size: 20px;
+        background: none;
+        text-decoration: none;
+        color: #CDCDCD;
+        width: 40px;  /* tamanho dos icones */
+        border: none;
+    }
+    .container-footer .copy{
+        font-size: 13px;
+        color: #CDCDCD;
+        margin-top: 15px;
+        background-color: #1f1f1f;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        font-weight: 180;
+    }
+    .container-footer button:hover{
+        color: rgba(201, 159, 50, 1);
+        cursor: pointer;
+        transform: scale(1.3);
+    }
+
+    /* ÁREAS DE ATUAÇÃO */
+
+    .banner-areas-atuacao {
+        position: relative;
+    }
+    .banner-areas-atuacao img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .banner-areas-atuacao .texto-banner{
+        position: absolute;
+        top: 50%; /* Centraliza verticalmente */
+        left: 50%; /* Centraliza horizontalmente */
+        transform: translate(-50%, -50%); /* Corrige o deslocamento do centro */
+        
+        color: rgba(201, 159, 50, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        width: 100%; /* Para ocupar a largura da seção */
+
+    }
+
+   
+
+

@@ -1,0 +1,114 @@
+@media screen and (max-width: 800px) {
+
+    header .menu, header .sociais {
+        display: none;
+    }
+
+    header .logo{
+        width: 15%; 
+        margin-top: 10px;
+        margin-right: 120px;       
+    } 
+
+    /* Estilo do botão "X" do menu mobile */
+
+    header .btn-menu-mobile div{
+    background-color: rgba(201, 159, 50, 1);
+    height: 3px;
+    margin: 8px 10px;
+    transition: .2s;
+    z-index: 99999999999999;
+
+    } 
+    header .btn-menu-mobile .line-n1.ativo1{
+        transform: rotate(45deg) translate(31%);
+    }
+    header .btn-menu-mobile .line-n2.ativo2{
+        transform: rotate(-45deg) translate(30%);
+        width: 25px;
+    }
+
+    /* Estilo menu mobile */
+
+    header .menu-mobile{
+        margin-top: 74px;
+        width: 0;
+        height: 0;
+        background-color: #0000007a;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        backdrop-filter: blur(5px);
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 8888;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        overflow: hidden;
+        transition: .5s;
+    } 
+   
+    header .menu-mobile ul{
+        display: block;
+        padding: 0px; 
+        width: 70%;      
+    }
+
+    header .menu-mobile a{
+        text-decoration: none;
+        color: #fff;
+        margin: 10px;
+        padding: 10px 0;
+        display: block;
+        border: #fff solid 2px;
+        border-radius: 25px;
+    }
+    header .menu-mobile a:hover{
+        cursor: pointer;
+        font-size: 17px;
+        color: rgba(201, 159, 50, 1);
+        border: rgba(201, 159, 50, 1) solid 2px;
+    }
+
+    header .menu-mobile.abrir{
+        width: 100%;
+        height: 48%;
+
+    }
+
+   /*Estilo texto banner*/
+
+   .banner .texto-banner {
+     position: absolutere;
+     top: 50%;
+     left: 5%;
+     transform: translateY(-50%);
+     color: #DDDDDD;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+    }
+    .texto-banner h1{
+     font-size: 30px;
+     line-height: 0.9; /* quanto menor, menos espaço entre as linhas */
+    }
+    .texto-banner h3{
+     font-size: 20px;
+     font-weight:200;
+     line-height: 1.4; /* quanto menor, menos espaço entre as linhas */
+    }
+    .texto-banner h5{
+      font-size: 10px;
+      font-weight: 180;
+      line-height: 0.8; /* quanto menor, menos espaço entre as linhas */ 
+   
+    }
+
+
+}
