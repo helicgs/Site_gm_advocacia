@@ -31,6 +31,7 @@
     /* Estilo menu mobile */
 
     header .menu-mobile{
+        position: fixed;
         margin-top: 74px;
         width: 0;
         height: 0;
@@ -80,7 +81,7 @@
 
     }
 
-   /*Estilo texto banner*/
+   /*Estilo texto banner HOME*/
 
    .banner .texto-banner {
      position: absolutere;
@@ -108,6 +109,32 @@
       font-weight: 180;
       line-height: 0.8; /* quanto menor, menos espaço entre as linhas */ 
    
+    }
+
+    .areas_de_atuacao h1{
+        font-size:20PX;
+    }
+
+    /* SOBRE NÓS */
+
+    .banner-sobre-nos .texto-banner_sobre_nos{
+    margin-top: 11px;
+    font-size: 20px;
+    }
+    .adv_associados h1{
+        font-size: 18PX; /* tamanho do texto para mobile */
+    }
+    .escritorio-h1 h1{
+         font-size: 20PX;
+    }
+
+    .container-missao{    
+    width: 90%;       /* Tamanho do container*/
+    margin: 0 auto;
+    }
+
+    .container-footer .copy{
+    font-size: 10px;
     }
 
 

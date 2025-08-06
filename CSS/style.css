@@ -17,6 +17,9 @@ img{
 
 
 .container{
+    background-color: black;
+    position: fixed;
+    margin-top: 0 auto;
     max-width: auto;
     margin: 0 auto;
     display:flex;
@@ -24,6 +27,8 @@ img{
     justify-content: space-around;
     border-bottom: 5px rgb(201, 159,50) solid;
     padding: 10px 0px;
+    z-index: 1000000;
+    
 }
 
 header .menu{    
@@ -96,9 +101,10 @@ header .btn-menu-mobile .line-n2{
 }
 
 .banner img {
+    margin-top: 74px;
     width: 100%;
     height: auto;
-    display: block;
+    
 }
 
 .banner .texto-banner {
@@ -209,6 +215,7 @@ header .btn-menu-mobile .line-n2{
 }
 
 /* O Ecritóroio */
+
 .escritorio-h1 h1{
     margin-top: 40px;
     font-size: 25px;
@@ -222,104 +229,233 @@ header .btn-menu-mobile .line-n2{
     padding: 5px 5px;
 }
 .escritorio-h1 p{
-    width: 70%;
+    width: 80%;
     color: #333;
     margin: 40px auto;
     text-align: center;
 }
 
-    /* Footer*/
+/* Footer*/
+
+.container-footer{
+    margin-top: 100px;
+    background-color: rgb(20, 20, 20);
+    border-top: rgba(201, 159, 50, 1) solid 5px;
+    max-width: 100%;
+}
+
+.logo-footer{
+    width: 150px;
+    margin: 0 auto; 
+}
+.logo-footer img{
+    width:150px;   /* Tamanho da logo */       
+}
+
+.container-footer .logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-informacoes{
+    max-width: 85%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container-informacoes h3{
+    color: rgba(201, 159, 50, 1);
+    margin-top: 10px;
+}
+    .container-informacoes p{
+    color: #DDDDDD;;
+}
+
+.container-footer .sociais-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sociais-footer button{
+    font-size: 20px;
+    background: none;
+    text-decoration: none;
+    color: #CDCDCD;
+    width: 40px;  /* tamanho dos icones */
+    border: none;
+}
+.container-footer .copy{
+    font-size: 10px;
+    color: #CDCDCD;
+    margin-top: 15px;
+    background-color: #1f1f1f;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    font-weight: 180;
+}
+.container-footer button:hover{
+    color: rgba(201, 159, 50, 1);
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+/* ÁREAS DE ATUAÇÃO */
+
+.banner-areas-atuacao {
+    position: relative;
+}
+.banner-areas-atuacao img {
+    margin-top: 74px;
+    width: 100%;
+    height: auto;
+
+}
+.banner-areas-atuacao .texto-banner{
+    font-size: 40px;
+    position: absolute;
+    top: 60%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige o deslocamento do centro */
     
-    .container-footer{
-        margin-top: 100px;
-        background-color: rgb(20, 20, 20);
-        border-top: rgba(201, 159, 50, 1) solid 5px;
-        max-width: 100%;
-    }
+    color: rgba(201, 159, 50, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-    .logo-footer{
-        width: 150px;
-        margin: 0 auto; 
-    }
-    .logo-footer img{
-        width:150px;   /* Tamanho da logo */       
-    }
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    width: 100%; /* Para ocupar a largura da seção */
 
-    .container-footer .logo-footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .container-informacoes{
-        max-width: 70%;
-        margin: 30px auto;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .container-informacoes h3{
-        color: rgba(201, 159, 50, 1) ;
-    }
-     .container-informacoes p{
-        color: #DDDDDD;;
-    }
+}
 
-    .container-footer .sociais-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+/* SOBRE NÓS */
 
-    }
-    .sociais-footer button{
-        font-size: 20px;
-        background: none;
-        text-decoration: none;
-        color: #CDCDCD;
-        width: 40px;  /* tamanho dos icones */
-        border: none;
-    }
-    .container-footer .copy{
-        font-size: 13px;
-        color: #CDCDCD;
-        margin-top: 15px;
-        background-color: #1f1f1f;
-        align-items: center;
-        text-align: center;
-        padding: 5px;
-        font-weight: 180;
-    }
-    .container-footer button:hover{
-        color: rgba(201, 159, 50, 1);
-        cursor: pointer;
-        transform: scale(1.3);
-    }
+.banner-sobre-nos{
+     position: relative;
+}
 
-    /* ÁREAS DE ATUAÇÃO */
+.banner-sobre-nos img{
+    margin-top: 55px;
+    width: 100%;
+    height: auto;
+}
 
-    .banner-areas-atuacao {
-        position: relative;
-    }
-    .banner-areas-atuacao img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-    .banner-areas-atuacao .texto-banner{
-        position: absolute;
-        top: 50%; /* Centraliza verticalmente */
-        left: 50%; /* Centraliza horizontalmente */
-        transform: translate(-50%, -50%); /* Corrige o deslocamento do centro */
-        
-        color: rgba(201, 159, 50, 1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+.banner-sobre-nos .texto-banner_sobre_nos{
+    font-size: 43px;
+    position: absolute;
+    top: 60%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige o deslocamento do centro */
+    
+    color: rgba(201, 159, 50, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-        width: 100%; /* Para ocupar a largura da seção */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    width: 100%; /* Para ocupar a largura da seção */
 
-    }
+}
+
+.adv_associados h1{
+margin-top: 40px;
+font-size: 25px;
+color: rgba(201, 159, 50, 1);
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+border: rgba(201, 159, 50, 1) solid 2px;
+border-radius:50px;
+max-width: 68%;
+padding: 5px 5px;
+}
+
+.adv_associados p{
+    color:rgba(201, 159, 50, 1);
+    margin-top: 5px;
+    font-weight: 300;      /* para deixar a fonte mais fina */
+}
+
+.adv_associados .cards-img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 45px;          /* espaço entre os cards/imagens */
+    text-align: center;
+    padding: 20px;
+}
+
+.adv_associados .img {
+    width: 200px; /* controla o tamanho do card */
+}
+
+.adv_associados img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    transition: transform 0.2s ease;
+    
+}
+
+.adv_associados img:hover {
+    transform: scale(1.05); /* transição aplicada no :hove */
+}
+
+.container-missao{    
+    width: 95%;       /* Tamanho do container*/
+    margin: 0 auto;
+}
+
+.container-missao h4{
+    color: rgba(201, 159, 50, 1);    
+    border-bottom: 1px solid rgba(201, 159, 50, 1);
+   
+}
+
+.container-missao p{    
+    color: #333;
+    margin: 15px auto;    
+    font-weight: 300;      /* para deixar a fonte mais fina */
+    display: flex;
+    align-content: space-around;
+
+}
+
+/* Fale Conosco*/
+
+.banner-conosco{
+     position: relative;
+}
+
+.banner-conosco img{
+    margin-top: 55px;
+    width: 100%;
+    height: auto;
+}
+
+.banner-conosco .texto-banner_conosco{
+    font-size: 43px;
+    position: absolute;
+    top: 60%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Corrige o deslocamento do centro */
+    
+    color: rgba(201, 159, 50, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    text-shadow: 2px 2px 4px rgba(107, 107, 107, 0.6);
+    width: 100%; /* Para ocupar a largura da seção */
+
+}
+
 
    
 
