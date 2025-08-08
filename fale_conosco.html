@@ -67,23 +67,61 @@
 
         </header>
         
-        <section class="banner-conosco">
+        <div class="banner-conosco">
             <div class="texto-banner_conosco">
                 <h1>FALE CONOSCO</h1>
             </div>         
             <img src="Img/Fale conosco.png">
-        </section>
-
-        <div class="formulario">
-            <h1>ENVIE SUA MENSAGEM</h1>
-            
-            
-           
         </div>
 
-        <div class="localização">
-            <h1>LOCALIZAÇÃO</h1>
-            
+        <div class="texto_form">
+            <h2>ENVIE SUA MENSAGEM</h2>
+            <p>Nossos advogados estão disponíveis para lhe atender.</p>
+        </div>
+
+        <div class="formulario"> 
+            <form action="https://formsubmit.co/ souzaherli@gmail.com" method="post">
+
+                <h3>Formulário de contato</h3>
+                <label>Nome:</label>
+                <input type="text" nome="nome" placeholder="Seu nome" autocomplete="off" required>
+
+                <label>E-mail:</label>
+                <input type="email" nome="email" placeholder="Seu email" autocomplete="off" requiredS>
+
+                <label>WhatsApp:</label>
+                <input type="tel" nome="telefone" placeholder="WhatsApp"  pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" required autocomplete="off">
+
+                <label>Mensagem:</label>
+                <textarea nome="mensagem" cols="30" rows="10" placeholder=" Escreva aqui sua mensagem"></textarea>
+
+                <button type="submit">Enviar</button>
+
+                <!-- Código para desativar reCAPTCHA para confirmar que não é um robô-->
+                <tipo de entrada="oculto" nome="_captcha" valor="falso"></tipo> 
+
+                <!-- Required: Your Static Forms API key 
+                <input type="hidden" name="apiKey" value="sf_ka815b19lg9jhafbheee5e3f">
+                 -Optional redirect URLs 
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">-->
+            </form>
+             
+
+        </div>  
+
+        <div class="localizacao">
+            <h2>LOCALIZAÇÃO</h2>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1757.7796227114566!2d-46.55108734048931!3d-23.69105645134883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42366db803a7%3A0x899fd54c291163a7!2sR.%20Jos%C3%A9%20Versolato%2C%20111%20-%20Sala%201513%20-%20Centro%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009750-730!5e0!3m2!1spt-BR!2sbr!4v1754613613294!5m2!1spt-BR!2sbr" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
 
         </div>
 
@@ -98,7 +136,7 @@
                 <h3>ENDEREÇO</h3>
                 <p>
                     Rua José Versolato, n°111, sala 1513,<br>
-                    São Bernardo do Campo-SP  
+                    São Bernardo do Campo - SP  
                 </p>
             </div><br>
 
