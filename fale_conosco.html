@@ -80,34 +80,39 @@
         </div>
 
         <div class="formulario"> 
-            <form action="https://formsubmit.co/ souzaherli@gmail.com" method="post">
+            <form action="https://formspree.io/f/mvgqnglw" method="post">
+
+                <!-- Required: Your Static Forms API key
+                <input type="hidden" name="apiKey" value="sf_b4ckfif6m0al00f9m60i40d7">   -->
 
                 <h3>Formulário de contato</h3>
+
                 <label>Nome:</label>
-                <input type="text" nome="nome" placeholder="Seu nome" autocomplete="off" required>
+                <input type="text" name="name" placeholder="Seu nome" autocomplete="off" required>
 
                 <label>E-mail:</label>
-                <input type="email" nome="email" placeholder="Seu email" autocomplete="off" requiredS>
+                <input type="email" name="email" placeholder="Seu email" autocomplete="off" required>
 
                 <label>WhatsApp:</label>
-                <input type="tel" nome="telefone" placeholder="WhatsApp"  pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" required autocomplete="off">
+                <input type="tel" name="telefone" placeholder="WhatsApp"  
+                    pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" autocomplete="off">
 
                 <label>Mensagem:</label>
-                <textarea nome="mensagem" cols="30" rows="10" placeholder=" Escreva aqui sua mensagem"></textarea>
+                <textarea name="message" cols="30" rows="10" placeholder="Escreva aqui sua mensagem" required></textarea>
 
                 <button type="submit">Enviar</button>
 
-                <!-- Código para desativar reCAPTCHA para confirmar que não é um robô-->
-                <tipo de entrada="oculto" nome="_captcha" valor="falso"></tipo> 
+                <!-- Desativar reCAPTCHA 
+                <input type="hidden" name="captcha" value="false">  -->
 
-                <!-- Required: Your Static Forms API key 
-                <input type="hidden" name="apiKey" value="sf_ka815b19lg9jhafbheee5e3f">
-                 -Optional redirect URLs 
-                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">-->
+                <!-- Redirecionamento após envio 
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">  -->
+
             </form>
-             
+        </div>
 
-        </div>  
+
+        <!--MAPA DE LOCALIZAÇAO-->
 
         <div class="localizacao">
             <h2>LOCALIZAÇÃO</h2>
